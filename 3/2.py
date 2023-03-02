@@ -37,6 +37,6 @@ word = list(input('Введите слово: '))
 cost = 0
 for item in word:
     for key, value in my_dict.items():
-        if item in value.lower():
+        if item.upper() in value:
             cost += key
 print(cost)           
