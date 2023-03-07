@@ -6,7 +6,11 @@
 # 2 2
 #     4
 
-def sum_nums(a, b):
-    if a and b >= 0:
-    return sum(sum_nums(a, b))
-print(sum_nums(2,2))
+number_1 = int(input('Введите неотрицательное число : '))
+number_2 = int(input('Введите неотрицательное число : '))
+
+def sum_nums(number_1, number_2):
+    if number_2 == 0:
+        return number_1
+    return sum_nums(number_1 + 1, number_2 - 1)
+print(sum_nums(number_1, number_2))

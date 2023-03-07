@@ -5,17 +5,14 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8 
 
-# number_a = int(input('Введите число А = '))
-# number_b = int(input('Введите число Б = '))
+number_a = int(input('Введите число А: '))
+number_b = int(input('Введите число Б: '))
 
-# res = number_a ** number_b
-# res = pow(number_a, number_b)
-# print(res)
-
-def res_num(a, b):
-    if b == 0:
+def res_num(number_a, number_b):
+    if number_b == 0:
         return 1
-    return a * res_num(a, b - 1) 
-print(res_num(3,5))
+    return number_a * res_num(number_a, number_b - 1)
+
+print(res_num(number_a, number_b))
 
 
