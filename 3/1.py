@@ -14,7 +14,7 @@ max_dif = max(my_list)
 for i in my_list:
     if i == number:
         print(my_list.count(number))
-    elif abs(number - i) < max_dif and number not in my_list:
-        max_dif = abs(number - i)
-        min_number = i
-print(f'Максимально близкое число = {min_number}')
+#     elif abs(number - i) < max_dif and number not in my_list:
+#         max_dif = abs(number - i)
+#         min_number = i
+# print(f'Максимально близкое число = {min_number}')
