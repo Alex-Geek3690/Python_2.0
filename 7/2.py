@@ -14,6 +14,13 @@
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36
 
-new_list = list(sum(item in vowels for item in phrase) for phrase in poem)
 
-my_list = [x*y in ]
+
+def print_operation_table(operation, num_rows, num_columns):
+    my_list = []
+    for i in range(1, num_rows + 1):
+        for j in range(1, num_columns + 1):
+            my_list = (operation(i, j))
+            print(my_list, end='\t')
+        print()
+print_operation_table(lambda x, y: x * y, 6, 6)
