@@ -47,3 +47,6 @@ def show_message(message: str):
     print(message)
     print('-'*len(message))
 
+
+# def input_contact_search(message):
+#     return input(message)
