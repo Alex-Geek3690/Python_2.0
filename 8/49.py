@@ -73,7 +73,6 @@ def add_cntc(dict_phnbk, new_cntc_in = [0]):
         cntc_list = [phone_cntc, comment_cntc]
     else:
         name_cntc, cntc_list = tuple(new_cntc_in)
-    # dict_phnbk = dict_phnbk.setdefault(name_cntc, cntc_list)
     dict_phnbk.setdefault(name_cntc, cntc_list)
     print(dict_phnbk[name_cntc])
     return dict_phnbk
