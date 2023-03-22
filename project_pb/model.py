@@ -39,18 +39,9 @@ def find_contact(search: str) -> list[dict]:
                 cont_finding.append(contact)
     return cont_finding
 
-# def rem_contact():
-#     changed_pb = []
-#     for contact in phone_book:
-#         for value in contact.values():
-#             if search_name in elem:
-#                 changed_pb.append(contact)
-#                 if len(changed_pb) == 1:
-#                     changed_pb.clear()
-#                 else:
-#                     for contact in changed_pb:
-#                         for elem in contact.values():
-#                             if search_phone in elem:
+def contact_delete(index: int):
+    phone_book.pop(index-1)
+
 
 
 
