@@ -33,7 +33,7 @@ def start():
             case 7:
                 index = view.delete_contct('Введите номер контакта, который хотите удалить: ')
                 model.contact_delete(index)
-                view.show_message(f'Контакт {model.get_phone_book()[index-1].get("name")} успешно удален')
+                view.show_message(f'Контакт успешно удален')
             case 8:
                 return
 

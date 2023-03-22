@@ -48,4 +48,4 @@ def show_message(message: str):
     print('-'*len(message))
 
 def delete_contct(message):
-    return input(message)
+    return int(input(message))
