@@ -64,4 +64,9 @@ class PhoneBook:
             i += 1
             result += f' {i}. {contact}\n'
         return result[:-2]
-    
+        
+        
+    def show_message(self, message: str):
+        print('-'*len(message))
+        print(message)
+        print('-'*len(message))
